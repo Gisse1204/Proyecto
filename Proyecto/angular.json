@@ -23,9 +23,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/Bootstrap/dist/CSS/Bootstrap.css"
             ],
             "scripts": [
+              "node_modules/Bootstrap/dist/js/Bootstrap.js"
             ]
           },
           "configurations": {
