@@ -8,6 +8,12 @@ import { LogoApComponent } from './components/logo-ap/logo-ap.component';
 import { SocialComponent } from './components/social/social.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
     LogoApComponent,
     SocialComponent,
     BannerComponent,
-    AcercadeComponent
+    AcercadeComponent,
+    ExperienciaComponent,
+    EducacionComponent,
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,
