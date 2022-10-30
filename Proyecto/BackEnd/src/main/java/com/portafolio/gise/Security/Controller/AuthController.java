@@ -36,7 +36,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author GISELA
  */
-@CrossOrigin(origins = "https://pruebaap-9858f.web.app")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/auth")
 
