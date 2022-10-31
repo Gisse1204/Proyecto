@@ -36,7 +36,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author GISELA
  */
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendgisse.web.app")
 @RestController
 @RequestMapping("/auth")
 
