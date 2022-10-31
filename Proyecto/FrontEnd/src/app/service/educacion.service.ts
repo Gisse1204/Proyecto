@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'https://backendgise.herokuapp.com/educacion/';
+  URL = 'https://frontendgisse.web.app//educacion/';
 
   constructor(private httpClient : HttpClient) { }
 

@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backendgise.herokuapp.com/auth/';
+  authURL = 'https://frontendgisse.web.app//auth/';
 
   constructor(private httpClient: HttpClient) { }
 
