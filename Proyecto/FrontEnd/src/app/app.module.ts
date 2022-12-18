@@ -22,6 +22,8 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     EditeducacionComponent,
     ProyectoComponent,
     HysComponent,
+    EditSkillComponent,
+    NewSkillComponent,
   ],
   imports: [
     BrowserModule,

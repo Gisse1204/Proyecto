@@ -1,13 +1,19 @@
 <div class="row">
     <h1>Hard & Soft skills</h1>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <div class="col-lg-2">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
          <circle-progress
-            [percent]="70"
+            [percent]="(skill.porcentaje)"
             [radius]="100"
+            [imageSrc]="''"
+            [title]="(skill.nombre)"
+            [titleColor]="'#212F3C'"
+            [showImage]="true"
+            [imageHeight]="70"
+            [imageWidth]="70"
             [showUnits]="false"
-            [title]="'HTML'"
-            [titleColor]="'black'"
-            [titleFontSize]="'30px'"
             [showSubtitle]="false"
             [outerStrokeWidth]="12"
             [innerStrokeWidth]="12"
@@ -17,95 +23,13 @@
             [animationDuration]="300"
             [lazy]="true"
          ></circle-progress>
+         <td *ngIf="isLogged">
+            <button class="btn btn-secondary active" routerLink="/editskill/{{skill.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
+        </td>
+        <td *ngIf="isLogged">
+            <button class="btn btn-outline-dark" (click)="delete(skill.id)">
+                <i class="bi bi-trash-fill"></i></button>
+        </td>
    </div>
-   <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="50"
-            [radius]="100"
-            [showUnits]="false"
-            [title]="'CSS'"
-            [titleColor]="'black'"
-            [titleFontSize]="'30px'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="12"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'grey'"
-            [animation]="true"
-            [animationDuration]="300"
-            [lazy]="true"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="50"
-            [radius]="100"
-            [showUnits]="false"
-            [title]="'JS'"
-            [titleColor]="'black'"
-            [titleFontSize]="'30px'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="12"
-            [outerStrokeColor]="'black'"
-            [innerStrokeColor]="'yellow'"
-            [animation]="true"
-            [animationDuration]="300"
-            [lazy]="true"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="55"
-            [radius]="100"
-            [showUnits]="false"
-            [title]="'GitHub'"
-            [titleColor]="'black'"
-            [titleFontSize]="'30px'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="12"
-            [outerStrokeColor]="'red'"
-            [innerStrokeColor]="'orange'"
-            [animation]="true"
-            [animationDuration]="300"
-            [lazy]="true"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="100"
-            [radius]="100"
-            [showUnits]="false"
-            [title]="'Equipo'"
-            [titleColor]="'black'"
-            [titleFontSize]="'30px'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="12"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="300"
-            [lazy]="true"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="70"
-            [radius]="100"
-            [showUnits]="false"
-            [title]="'Inglés'"
-            [titleColor]="'black'"
-            [titleFontSize]="'30px'"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="12"
-            [outerStrokeColor]="'blue'"
-            [innerStrokeColor]="'red'"
-            [animation]="true"
-            [animationDuration]="300"
-            [lazy]="true"
-        ></circle-progress>
-    </div>
 </div>
